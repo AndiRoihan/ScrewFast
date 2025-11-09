@@ -15,9 +15,10 @@ import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
 import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import rotiPisangCokelat from "@images/roti-pisang-cokelat.png";
+import rotiManisIsi from "@images/roti-manis-isi.png";
+import rotiAbon from "@images/roti-abon.png";
+import owner from "@images/owner.jpeg";
 import { partnersData } from "@/data_files/constants";
 
 const avatarSrcs: Array<string> = [
@@ -41,7 +42,7 @@ const avatarSrcs: Array<string> = [
           class="text-yellow-500 dark:text-yellow-400">Aroma Bakery</span> Halal, Nikmat, dan Higienis Sejak 2011`
       subTitle="Dibuat dengan resep rumahan pilihan dan bahan berkualitas, Aroma Bakery menghadirkan roti lembut dengan berbagai isian favorit. Cocok untuk camilan sehari-hari, acara keluarga, hingga kebutuhan toko & warung."
       primaryBtn="Pesan Sekarang Via WhatsApp"
-      primaryBtnURL="http://wa.me/6285299910439"
+      primaryBtnURL="https://wa.me/6285299910439"
       secondaryBtn="Contact Sales Team"
       secondaryBtnURL="/contact"
       withReview={true}
@@ -76,8 +77,8 @@ const avatarSrcs: Array<string> = [
           heading: "Roti Manis Isi",
           content:
             "Varian: Cokelat, Keju, Stroberi, dan Nanas <br> Roti dengan tekstur lembut dan isian manis yang menyatu sempurna di setiap gigitan. Hadir dengan rasa klasik yang familiar di lidah, cocok sebagai camilan santai, bekal anak ke sekolah, atau teman minum kopi/teh di sore hari. ",
-          svg: "tools",
-          src: tools,
+          svg: "groups",
+          src: rotiManisIsi,
           alt: "Yellow and black heavy equipment on brown grass field",
           first: true,
         },
@@ -85,8 +86,8 @@ const avatarSrcs: Array<string> = [
           heading: "Roti Pisang Cokelat",
           content:
             "Perpaduan pisang manis yang lembut dengan lelehan cokelat hangat menciptakan rasa yang kaya dan memanjakan. Favorit banyak pelanggan karena aromanya menggugah selera dan membuat setiap suapan terasa istimewa.",
-          svg: "dashboard",
-          src: dashboard,
+          svg: "groups",
+          src: rotiPisangCokelat,
           alt: "A screenshot or graphic representation of the intuitive dashboard",
           second: true,
         },
@@ -94,8 +95,8 @@ const avatarSrcs: Array<string> = [
           heading: "Roti Abon",
           content:
             "Roti lembut bertekstur ringan dengan taburan abon gurih yang menggoda. Rasanya tidak terlalu manis, sehingga sangat cocok untuk sarapan cepat, hidangan rapat, ataupun sebagai camilan pengganjal perut saat beraktivitas.",
-          svg: "house",
-          src: construction,
+          svg: "groups",
+          src: rotiAbon,
           alt: "Gray metal building frame near tower crane during daytime",
         },
       ]}
@@ -115,7 +116,7 @@ const avatarSrcs: Array<string> = [
           author: "Hj. Syohra",
           role: "Founder | Aroma Bakery",
           avatarSrc:
-            "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+            "owner",
         },
       ]}
       statistics={[
@@ -149,10 +150,12 @@ const avatarSrcs: Array<string> = [
   <section id="faq">
     <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
+    <iframe class="m-auto w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.7935181933544!2d119.4168485530981!3d-5.117083943528166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefd00140d6b8f%3A0x3ec0dee05d5870ae!2sAroma%20Bakery!5e1!3m2!1sid!2sid!4v1762699313287!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
     <HeroSectionAlt
       title="Siap Pesan Roti Hari Ini?"
       subTitle="Klik tombol di bawah untuk langsung chat WhatsApp."
-      url="http://wa.me/6285299910439"
+      url="https://wa.me/6285299910439"
     />
   </section>
 </MainLayout>
