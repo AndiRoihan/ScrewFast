@@ -3,9 +3,9 @@ import ogImageSrc from "@images/social.png";
 
 
 export const SITE = {
-  title: "ScrewFast",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
+  title: "Aroma Bakery",
+  tagline: "Halal, Nikmat, dan Higienis Sejak 2011",
+  description: "Dibuat dengan resep rumahan pilihan dan bahan berkualitas, Aroma Bakery menghadirkan roti lembut dengan berbagai isian favorit. Cocok untuk camilan sehari-hari, acara keluarga, hingga kebutuhan toko & warung.",
   description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
   url: "https://screwfast.uk",
   author: "Emil Gulamov",

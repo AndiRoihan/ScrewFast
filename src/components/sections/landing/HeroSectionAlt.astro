@@ -1,11 +1,12 @@
 ---
 // Import the necessary dependencies
+import WhatsappBtn from "@/components/ui/buttons/WhatsappBtn.astro";
 import GithubBtn from "@components/ui/buttons/GithubBtn.astro";
 
 // Define props from Astro
 const { title, subTitle, url } = Astro.props;
 
-const btnTitle = Astro.currentLocale === "fr" ? "Continuer avec Github" : "Continue with Github";
+const btnTitle = Astro.currentLocale === "fr" ? "Pesan Sekarang" : "Pesan Sekarang";
 
 // Define TypeScript interface for props
 interface Props {
@@ -19,7 +20,7 @@ interface Props {
   class="relative mx-auto max-w-[85rem] px-4 pb-24 pt-10 sm:px-6 lg:px-8"
 >
   <!-- Decorating SVG elements -->
-  <div
+  <!-- <div
     class="absolute left-0 top-[55%] scale-90 md:top-[20%] xl:left-[10%] xl:top-[25%]"
   >
     <svg
@@ -115,7 +116,7 @@ interface Props {
         d="M9.5 12a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5ZM19.5 7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"
       ></path>
     </svg>
-  </div>
+  </div> -->
   <!-- Hero Section Heading -->
   <div class="mx-auto mt-5 max-w-xl text-center">
     <h2
@@ -138,7 +139,7 @@ interface Props {
   {
     url && (
       <div class="mt-8 flex justify-center gap-3">
-        <GithubBtn url={url} title={btnTitle}/>
+        <WhatsappBtn url={url} title={btnTitle}/>
       </div>
     )
   }

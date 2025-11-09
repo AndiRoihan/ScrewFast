@@ -1,38 +1,38 @@
 {
-  "title": "Simple, Transparent Pricing",
-  "subTitle": "Boost efficiency with ScrewFast's clear, value-driven plans.",
-  "badge": "Best value",
-  "thirdOption": "Enterprise Solutions?",
-  "btnText": "Get a Custom Quote",
+  "title": "Pilihan Paket Roti untuk Acara & Warung",
+  "subTitle": "Pilih paket roti sesuai kebutuhan Anda! Untuk keluarga, acara, hingga kebutuhan warung. Dibuat fresh setiap hari dengan rasa yang disukai banyak orang.",
+  "badge": "Rekomendasi",
+  "thirdOption": "",
+  "btnText": "",
 
   "starterKit": {
-    "name": "Starter Kit",
-    "description": "Best option for DIY projects",
-    "price": "49",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "name": "Paket Standar",
+    "description": "Roti lembut dengan rasa manis yang familiar untuk semua kalangan. Cocok untuk camilan harian atau pendamping minum teh bersama keluarga.",
+    "price": "Rp59.999",
+    "cents": "",
+    "billingFrequency": "/ 20 pcs",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "Roti diproduksi fresh setiap hari",
+      "Varian rasa manis pilihan favorit",
+      "Cocok untuk bekal sekolah & arisan kecil"
     ],
-    "purchaseBtnTitle": "Get the Starter Kit",
-    "purchaseLink": "#"
+    "purchaseBtnTitle": "Order Sekarang",
+    "purchaseLink": "http://wa.me/6285299910439"
   },
 
   "professionalToolbox": {
-    "name": "Professional Toolbox",
-    "description": "Best for large scale uses",
-    "price": "89",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "name": "Paket Spesial",
+    "description": "Pilihan paket premium dengan varian lebih lengkap, termasuk varian gurih dan favorit semua usia. Ideal untuk acara, jamuan, dan konsumsi rapat.",
+    "price": "Rp89.999",
+    "cents": "",
+    "billingFrequency": "/ 20 pcs",
     "features": [
-      "Premium tool selection",
-      "Priority support",
-      "Exclusive content & deals",
-      "Bulk order discounts"
+      "Varian rasa lebih bervariasi",
+      "Cocok untuk suguhan tamu & acara",
+      "Tampilan menarik & siap disajikan",
+      "Rasa terjamin disukai banyak orang"
     ],
-    "purchaseBtnTitle": "Get the Professional Toolbox",
-    "purchaseLink": "#"
+    "purchaseBtnTitle": "Order Sekarang",
+    "purchaseLink": "http://wa.me/6285299910439"
   }
 }

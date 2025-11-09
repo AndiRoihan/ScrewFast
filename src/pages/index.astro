@@ -9,7 +9,7 @@ import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+// import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
 import heroImage from "@images/hero-image.avif";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
@@ -29,119 +29,130 @@ const avatarSrcs: Array<string> = [
 ---
 
 <MainLayout>
-  <AnnouncementBanner
+  <!-- <AnnouncementBanner
     btnId="dismiss-button"
     btnTitle="Explore ScrewFast on GitHub"
     url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  /> -->
 
-  <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
-    primaryBtn="Start Exploring"
-    primaryBtnURL="/products"
-    secondaryBtn="Contact Sales Team"
-    secondaryBtnURL="/contact"
-    withReview={true}
-    avatars={avatarSrcs}
-    rating=`<span class="font-bold">4.8</span> / 5`
-    starCount={4}
-    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
-    src={heroImage}
-    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
-  />
+  <section id="home">
+    <HeroSection
+      title=`<span
+          class="text-yellow-500 dark:text-yellow-400">Aroma Bakery</span> Halal, Nikmat, dan Higienis Sejak 2011`
+      subTitle="Dibuat dengan resep rumahan pilihan dan bahan berkualitas, Aroma Bakery menghadirkan roti lembut dengan berbagai isian favorit. Cocok untuk camilan sehari-hari, acara keluarga, hingga kebutuhan toko & warung."
+      primaryBtn="Pesan Sekarang Via WhatsApp"
+      primaryBtnURL="http://wa.me/6285299910439"
+      secondaryBtn="Contact Sales Team"
+      secondaryBtnURL="/contact"
+      withReview={true}
+      avatars={avatarSrcs}
+      rating=`<span class="font-bold">5</span> / 5`
+      starCount={5}
+      reviews=`Direview oleh berbagai <span class="font-bold">Customer</span>`
+      src={heroImage}
+      alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+    />
 
-  <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
-    partners={partnersData}
-  />
+    <ClientsSection
+      title="Didukung oleh Kolaborasi Lokal"
+      subTitle="Aroma Bakery berkolaborasi dengan program pendampingan digital bersama DekatLokal dan Rumah BUMN Makassar untuk memperluas jangkauan pemasaran dan meningkatkan kualitas layanan."
+      partners={partnersData}
+    />
 
-  <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
-    src={featureImage}
-    alt="ScrewFast products in floating boxes"
-    features={features}
-  />
+    <FeaturesGeneral
+      title="Kenapa Memilih Aroma Bakery?"
+      subTitle="Kami percaya bahwa roti bukan hanya sekadar makanan, tetapi bagian dari momen hangat bersama keluarga. Karena itu, setiap produk Aroma Bakery dibuat dengan sepenuh hati dan standar kualitas yang kami jaga sejak 2011."
+      src={featureImage}
+      alt="ScrewFast products in floating boxes"
+      features={features}
+    />
+  </section>
 
-  <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
-    tabs={[
-      {
-        heading: "Cutting-Edge Tools",
-        content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
-        src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
-        first: true,
-      },
-      {
-        heading: "Intuitive Dashboards",
-        content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
-      },
-      {
-        heading: "Robust Features",
-        content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-        svg: "house",
-        src: construction,
-        alt: "Gray metal building frame near tower crane during daytime",
-      },
-    ]}
-  />
+  <section id="products">
+    <FeaturesNavs
+      title=`Nikmati roti lembut dan harum dari <span class="text-yellow-500 dark:text-yellow-400">Aroma Bakery</span> dengan berbagai pilihan rasa yang disukai semua kalangan.`
+      tabs={[
+        {
+          heading: "Roti Manis Isi",
+          content:
+            "Varian: Cokelat, Keju, Stroberi, dan Nanas <br> Roti dengan tekstur lembut dan isian manis yang menyatu sempurna di setiap gigitan. Hadir dengan rasa klasik yang familiar di lidah, cocok sebagai camilan santai, bekal anak ke sekolah, atau teman minum kopi/teh di sore hari. ",
+          svg: "tools",
+          src: tools,
+          alt: "Yellow and black heavy equipment on brown grass field",
+          first: true,
+        },
+        {
+          heading: "Roti Pisang Cokelat",
+          content:
+            "Perpaduan pisang manis yang lembut dengan lelehan cokelat hangat menciptakan rasa yang kaya dan memanjakan. Favorit banyak pelanggan karena aromanya menggugah selera dan membuat setiap suapan terasa istimewa.",
+          svg: "dashboard",
+          src: dashboard,
+          alt: "A screenshot or graphic representation of the intuitive dashboard",
+          second: true,
+        },
+        {
+          heading: "Roti Abon",
+          content:
+            "Roti lembut bertekstur ringan dengan taburan abon gurih yang menggoda. Rasanya tidak terlalu manis, sehingga sangat cocok untuk sarapan cepat, hidangan rapat, ataupun sebagai camilan pengganjal perut saat beraktivitas.",
+          svg: "house",
+          src: construction,
+          alt: "Gray metal building frame near tower crane during daytime",
+        },
+      ]}
+      subTitle=`Harga: Mulai dari <span class="text-yellow-500 dark:text-yellow-400">Rp3.000/pcs</span> <br> Berat: <span class="text-yellow-500 dark:text-yellow-400">±35 gram</span> per roti, pas untuk sekali makan, tidak terlalu besar dan tidak terlalu kecil.``
+    />
+  </section>
 
-  <TestimonialsSection
-    title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
-    ;
-    testimonials={[
-      {
-        content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
-        avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-      },
-    ]}
-    statistics={[
-      {
-        count: "70k+",
-        description:
-          "customers equipped — from DIY to major construction firms",
-      },
-      {
-        count: "35%",
-        description:
-          "uptick in project efficiency with ScrewFast tools and services",
-      },
-      {
-        count: "15.3%",
-        description:
-          "reduction in maintenance costs reported by long-term clients",
-      },
-      {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
-      },
-    ]}
-  />
+  <section id="about-us">
+    <TestimonialsSection
+      title="Tentang Aroma Bakery"
+      subTitle="Aroma Bakery adalah usaha bakery rumahan yang didirikan oleh Hj. Syohra sejak tahun 2011 di Makassar. Kami berkomitmen menghadirkan roti yang lezat, higienis, dan terjangkau bagi semua kalangan."
+      ;
+      testimonials={[
+        {
+          content:
+            "Kami percaya roti yang baik bukan hanya lezat, tapi dibuat dengan hati dan ketulusan untuk keluarga.",
+          author: "Hj. Syohra",
+          role: "Founder | Aroma Bakery",
+          avatarSrc:
+            "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+        },
+      ]}
+      statistics={[
+        {
+          count: "12+ Tahun",
+          description:
+            "Pengalaman sejak 2011",
+        },
+        {
+          count: "6 Varian",
+          description:
+            "Pilihan rasa favorit keluarga",
+        },
+        {
+          count: "50+ Warung",
+          description:
+            "Partner titip jual & distribusi",
+        },
+        {
+          count: "1000+ Roti",
+          description: "Diproduksi setiap minggu",
+        },
+      ]}
+    />
+  </section>
 
-  <PricingSection pricing={pricing} />
+  <section id="paket">
+    <PricingSection pricing={pricing} />
+  </section>
 
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+  <section id="faq">
+    <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
-  <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
-  />
+    <HeroSectionAlt
+      title="Siap Pesan Roti Hari Ini?"
+      subTitle="Klik tombol di bawah untuk langsung chat WhatsApp."
+      url="http://wa.me/6285299910439"
+    />
+  </section>
 </MainLayout>

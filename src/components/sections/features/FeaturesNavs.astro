@@ -5,7 +5,7 @@ import TabContent from "@components/ui/blocks/TabContent.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
 // Define props from Astro
-const { title, tabs } = Astro.props;
+const { title, tabs, subTitle } = Astro.props;
 
 // Define TypeScript interface for tab object
 interface Tab {
@@ -22,6 +22,7 @@ interface Tab {
 interface Props {
   title?: string;
   tabs: Tab[];
+  subTitle?: string;
 }
 ---
 
@@ -57,6 +58,11 @@ interface Props {
             ))
           }
         </nav>
+        <h2
+          class="text-md font-semibold italic text-neutral-800 dark:text-neutral-200 sm:text-lg mt-4"
+        >
+          <Fragment set:html={subTitle} />
+        </h2>
       </div>
 
       <!-- Contents for each tab - the 'first' attribute should be used in the first tab for that tab to be initially visible, 'second' changes the styles -->

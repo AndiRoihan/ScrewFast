@@ -38,7 +38,7 @@ interface Props {
     />
     {/* Define the title of the page */}
     <title>{title}</title>
-    <script is:inline>
+    <!-- <script is:inline>
       // Script to handle dark mode. It will check if the theme is stored in localStorage or if dark theme is preferred by system settings
       if (
         localStorage.getItem("hs_theme") === "dark" ||
@@ -49,7 +49,18 @@ interface Props {
       } else {
         document.documentElement.classList.remove("dark");
       }
+    </script> -->
+    <script is:inline>
+      if (!localStorage.getItem("hs_theme")) {
+        localStorage.setItem("hs_theme", "default"); // paksa default menjadi light
+      }
+      if (localStorage.getItem("hs_theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
     </script>
+
     <script>
       import "@scripts/lenisSmoothScroll.js";
     </script>
