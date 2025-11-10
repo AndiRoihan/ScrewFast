@@ -7,9 +7,9 @@ export const SITE = {
   title: "Aroma Bakery",
   tagline: "Halal, Nikmat, dan Higienis Sejak 2011",
   description: "Dibuat dengan resep rumahan pilihan dan bahan berkualitas, Aroma Bakery menghadirkan roti lembut dengan berbagai isian favorit. Cocok untuk camilan sehari-hari, acara keluarga, hingga kebutuhan toko & warung.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+  description_short: "Cocok untuk camilan sehari-hari, acara keluarga, hingga kebutuhan toko & warung.",
+  url: "https://aroma-bakery.vercel.app/",
+  author: "Dekat Lokal",
 };
 
 export const SEO = {
@@ -18,7 +18,7 @@ export const SEO = {
   structuredData: {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    inLanguage: "en-US",
+    inLanguage: "id-ID",
     "@id": SITE.url,
     url: SITE.url,
     name: SITE.title,
@@ -33,11 +33,11 @@ export const SEO = {
 };
 
 export const OG = {
-  locale: "en_US",
+  locale: "id-ID",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: `${SITE.title}: : Toko Roti`,
+  description: "Dibuat dengan resep rumahan pilihan dan bahan berkualitas, Aroma Bakery menghadirkan roti lembut dengan berbagai isian favorit. Cocok untuk camilan sehari-hari, acara keluarga, hingga kebutuhan toko & warung.",
   image: ogImageSrc,
 };
 
