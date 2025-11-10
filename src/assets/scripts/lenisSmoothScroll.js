@@ -31,7 +31,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             lenis.scrollTo(targetId, {
                 // Opsi tambahan Lenis:
                 duration: 1.5, // Durasi scroll (bisa disesuaikan)
-                // offset: -60 // Tambahkan ini jika navbar Anda fixed dan setinggi 60px
+                offset: -60 // Tambahkan ini jika navbar Anda fixed dan setinggi 60px
             });
         }
     });

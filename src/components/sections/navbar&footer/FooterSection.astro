@@ -17,8 +17,9 @@ const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
 // Define the variables that will be used in this component
 // const sectionThreeTitle: string = Astro.currentLocale === "fr" ? "Rester à jour" : "Stay up to date";
 // const sectionThreeContent: string = Astro.currentLocale === "fr" ? "Restez informé des derniers outils et des offres exclusives." :
-  // "Stay updated with the latest tools and exclusive deals.";
-const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafted by";
+// "Stay updated with the latest tools and exclusive deals.";
+const crafted: string =
+  Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafted by";
 ---
 
 <footer class="w-full bg-neutral-300 dark:bg-neutral-900">
@@ -26,14 +27,11 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
     class="mx-auto w-full max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:pt-20 2xl:max-w-(--breakpoint-2xl)"
   >
     <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
-      <div class="col-span-full lg:col-span-1 flex flex-col items-center lg:items-baseline">
+      <div
+        class="col-span-full flex flex-col items-center lg:col-span-1 lg:items-baseline"
+      >
         <!-- Brand Logo -->
-        <Image
-          src={logo}
-          alt="Brand logo"
-          width={96}
-          class="h-auto w-46"
-        />
+        <Image src={logo} alt="Brand logo" width={96} class="h-auto w-46" />
       </div>
 
       {
@@ -47,7 +45,7 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
                 <li>
                   <a
                     href={link.url}
-                    class="inline-flex gap-x-2 rounded-lg text-neutral-600 outline-hidden ring-zinc-500 transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
+                    class="inline-flex gap-x-2 rounded-lg text-neutral-600 ring-zinc-500 outline-hidden transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
                   >
                     {link.name}
                   </a>
@@ -62,47 +60,47 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
         <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
           Site Map
         </h3>
-        <ul class="mt-3 grid space-y-3 grid-cols-2">
+        <ul class="mt-3 grid grid-cols-2 space-y-3">
           <li>
-            <a 
-              href=""
-              class="inline-flex gap-x-2 rounded-lg text-neutral-600 outline-hidden ring-zinc-500 transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
+            <a
+              href="#home"
+              class="inline-flex gap-x-2 rounded-lg text-neutral-600 ring-zinc-500 outline-hidden transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
             >
               Home
             </a>
           </li>
           <li>
-            <a 
-              href=""
-              class="inline-flex gap-x-2 rounded-lg text-neutral-600 outline-hidden ring-zinc-500 transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
+            <a
+              href="#products"
+              class="inline-flex gap-x-2 rounded-lg text-neutral-600 ring-zinc-500 outline-hidden transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
             >
               Products
             </a>
           </li>
           <li>
-            <a 
-              href=""
-              class="inline-flex gap-x-2 rounded-lg text-neutral-600 outline-hidden ring-zinc-500 transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
+            <a
+              href="#about-us"
+              class="inline-flex gap-x-2 rounded-lg text-neutral-600 ring-zinc-500 outline-hidden transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
             >
               About Us
             </a>
           </li>
           <li>
-            <a 
-              href=""
-              class="inline-flex gap-x-2 rounded-lg text-neutral-600 outline-hidden ring-zinc-500 transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
+            <a
+              href="#paket"
+              class="inline-flex gap-x-2 rounded-lg text-neutral-600 ring-zinc-500 outline-hidden transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
             >
               Paket
             </a>
           </li>
           <li>
-            <a 
-              href=""
-              class="inline-flex gap-x-2 rounded-lg text-neutral-600 outline-hidden ring-zinc-500 transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
+            <a
+              href="#faq"
+              class="inline-flex gap-x-2 rounded-lg text-neutral-600 ring-zinc-500 outline-hidden transition duration-300 hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-300 dark:focus:outline-hidden"
             >
               FAQ
             </a>
-          </li>                                        
+          </li>
         </ul>
       </div>
 
@@ -128,9 +126,7 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
         ))
       } -->
 
-      <div
-        class="flex flex-col items-center justify-start gap-8"
-      >
+      <div class="flex flex-col items-center justify-start gap-8">
         {
           partnersData.map((partner) => (
             <a href={partner.href} target="_blank" rel="noopener noreferrer">
@@ -159,10 +155,10 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
       </div> -->
     </div>
 
-
-    <div class="flex items-center justify-center mt-9 sm:mt-12">
-      <p class="text-sm text-neutral-600 dark:text-neutral-400 text-center">
-        Copytright © 2025 {SITE.title}. All Rights Reserved | Powered by DekatLokal
+    <div class="mt-9 flex items-center justify-center sm:mt-12">
+      <p class="text-center text-sm text-neutral-600 dark:text-neutral-400">
+        Copytright © 2025 {SITE.title}. All Rights Reserved | Powered by
+        DekatLokal
         <!-- <a
           class="rounded-lg font-medium underline underline-offset-2 outline-hidden ring-zinc-500 transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-hidden focus-visible:ring-3 dark:ring-zinc-200 dark:hover:text-neutral-300"
           href="https://www.gulamoff.dev/"
@@ -172,8 +168,8 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
       </p>
     </div>
 
-      <!-- Social Brands -->
-      <!-- <div>
+    <!-- Social Brands -->
+    <!-- <div>
         <FooterSocialLink url={strings.socialLinks.facebook}
           ><Icon name="facebookFooter" />
         </FooterSocialLink>
